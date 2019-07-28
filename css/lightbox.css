@@ -1,5 +1,6 @@
 body.lb-disable-scrolling {
   overflow: hidden;
+  max-width: 100%;
 }
 
 .lightboxOverlay {
@@ -11,6 +12,7 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
+  width: 100vw;
 }
 
 .lightbox {
@@ -32,7 +34,7 @@ body.lb-disable-scrolling {
   border-radius: 3px;
 
   /* Image border */
-  border: 4px solid white;
+  border: 2px solid white;
 }
 
 .lightbox a img {
@@ -159,6 +161,7 @@ body.lb-disable-scrolling {
 .lb-data .lb-details {
   width: 85%;
   float: left;
+  margin-top: 15px;
   /* text-align: left; */
   line-height: 1.1em;
 }
@@ -211,5 +214,8 @@ body.lb-disable-scrolling {
   .lb-data .lb-details {
     width: 100%;
   }
+
+  .lightbox .lb-image {
+    border: 4px solid white;
 
 }
